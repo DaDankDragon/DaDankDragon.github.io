@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Basic styling for the banner */
+        .banner {
+            background: rgba(0, 0, 0, 0.5);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 15px 5%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        /* Styling the dropdown button */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: clamp(12px, 2vw, 16px);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* The dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Styling the dropdown links */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change the background on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown when hovering over the parent div */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Other button styling */
+        .banner-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .banner-buttons button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: clamp(12px, 2vw, 16px);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Da Dank Dragon</h1>
+            <p>The One Stop Stoner Shop</p>
+        </div>
+        <div class="banner-buttons">
+            <div class="dropdown">
+                <!-- "Products" button -->
+                <button>Products</button>
+                <!-- Dropdown menu -->
+                <div class="dropdown-content">
+                    <a href="product1.html">Product 1</a>
+                    <a href="product2.html">Product 2</a>
+                    <a href="product3.html">Product 3</a>
+                </div>
+            </div>
+            <a href="about-us.html">
+                <button>About Us</button>
+            </a>
+        </div>
+    </div>
+    <img src="images/Test Homepage.jpg" alt="PooPoo">
+</body>
+</html>
