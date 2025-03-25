@@ -126,3 +126,9 @@ img {
     height: auto;
     cursor: pointer;
 }
+
+/* Apply dark grey background color to the entire page */
+body {
+    background-color: #333;
+    color: white; /* Ensure text is readable on dark background */
+}
